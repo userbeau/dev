@@ -1,0 +1,37 @@
+body {
+  background: $bgcolor;
+  color: $txtcolor;
+  font-size: $defaultfont;
+  font-family: $fontstyle;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr auto 1fr 1fr;
+  grid-template-areas: ". header ."
+                       "figure1 figure2 figure3"
+                       ". . ."
+                       ". . github";
+}
+
+h1 {
+  font-family: $fontstyle;
+  font-size: 30pt;
+}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$a-tags} {
+  color: #E8D538;
+  text-decoration: none;
+}
+#{$a-tags-hover} {
+  color: #0DC4FF;
+}
+
+figcaption {
+  font-family: $fontstyle;
+  font-size:  $projectfont;
+}
