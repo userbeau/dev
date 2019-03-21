@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.head {
+  padding: 1em;
+  font-size: 25pt;
+  text-align: center;
+  grid-area: head;
+}
+
+li {
+  padding: .75em;
+}

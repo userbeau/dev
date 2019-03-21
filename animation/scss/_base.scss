@@ -1,0 +1,21 @@
+$icon-layout:horizontal;
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon-animation {
+	margin: 0 auto;
+	width:700px;
+	height: 600px;
+	background: url("../img/icon-s66cf78c66f.png") left center;
+	animation: play .8s steps(5) infinite;
+}
+
+body {
+	background-color: rgba(255, 200, 10, 1);
+}
+
+@keyframes play {
+	100% {
+		background-position: -3500px;
+	}
+}

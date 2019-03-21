@@ -1,0 +1,28 @@
+@import 'icon/*.png';
+@include all-icon-sprites;
+
+body {
+  background-color: $bgcolor;
+  font-family: $basefont;
+}
+
+h1 {
+  color: $headfontcolor;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  a {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+
+    span {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    } //span
+  } // icons
+} //li

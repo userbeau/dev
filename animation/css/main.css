@@ -1,0 +1,42 @@
+.icon-sprite, .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
+  background-image: url('../img/icon-s66cf78c66f.png');
+  background-repeat: no-repeat;
+}
+
+.icon-1 {
+  background-position: 0 0;
+}
+
+.icon-2 {
+  background-position: -700px 0;
+}
+
+.icon-3 {
+  background-position: -1400px 0;
+}
+
+.icon-4 {
+  background-position: -2100px 0;
+}
+
+.icon-5 {
+  background-position: -2800px 0;
+}
+
+.icon-animation {
+  margin: 0 auto;
+  width: 700px;
+  height: 600px;
+  background: url("../img/icon-s66cf78c66f.png") left center;
+  animation: play 0.8s steps(5) infinite;
+}
+
+body {
+  background-color: #ffc80a;
+}
+
+@keyframes play {
+  100% {
+    background-position: -3500px;
+  }
+}
