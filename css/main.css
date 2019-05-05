@@ -9,18 +9,22 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto auto auto auto auto auto auto;
-  grid-template-areas: "header" "figure1" "figure2" "figure3" "figure4" "figure5" "figure6" "github"; }
+  grid-template-areas: "header" "figure1" "figure2" "figure3" "figure4" "figure5" "figure6" "figure7" "figure8" "figure9";
+}
 
 h1 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 30pt; }
+  font-size: 36pt;
+}
 
 a, a:active, a:hover, a:visited {
   color: #E8D538;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:active, a:hover {
-  color: #0DC4FF; }
+  color: #0DC4FF;
+}
 
 @media only screen and (min-width: 800px) {
   body {
@@ -33,8 +37,10 @@ a:active, a:hover {
     margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr auto auto auto auto;
-    grid-template-areas: "header header " "figure1 figure2" "figure3 figure4" "figure5 figure6" ". github"; } }
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-template-areas: "header header " "figure1 figure2" "figure3 figure4" "figure5 figure6" "figure7 figure8" "figure9 .";
+  }
+}
 @media only screen and (min-width: 1225px) {
   body {
     background: #000000;
@@ -46,37 +52,55 @@ a:active, a:hover {
     margin-right: auto;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr auto auto 1fr 1fr;
-    grid-template-areas: ". header ." "figure1 figure2 figure3" "figure4 figure5 figure6" ". . ." ". . github"; } }
+    grid-template-rows: 1fr auto auto auto auto;
+    grid-template-areas: ". header ." "figure1 figure2 figure3" "figure4 figure5 figure6" "figure7 figure8 figure9";
+  }
+}
 figcaption {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 15pt; }
+  font-size: 15pt;
+}
 
 html {
-  text-align: center; }
+  text-align: center;
+}
 
 header {
-  grid-area: header; }
+  grid-area: header;
+}
 
 .figure1 {
-  grid-area: figure1; }
+  grid-area: figure1;
+}
 
 .figure2 {
-  grid-area: figure2; }
+  grid-area: figure2;
+}
 
 .figure3 {
-  grid-area: figure3; }
+  grid-area: figure3;
+}
 
 .figure4 {
-  grid-area: figure4; }
+  grid-area: figure4;
+}
 
 .figure5 {
-  grid-area: figure5; }
+  grid-area: figure5;
+}
 
 .figure6 {
-  grid-area: figure6; }
+  grid-area: figure6;
+}
 
-.github {
-  grid-area: github; }
+.figure7 {
+  grid-area: figure7;
+}
 
-/*# sourceMappingURL=main.css.map */
+.figure8 {
+  grid-area: figure8;
+}
+
+.figure9 {
+  grid-area: figure9;
+}

@@ -16,12 +16,15 @@ body {
                        "figure4"
                        "figure5"
                        "figure6"
-                       "github";
+                       "figure7"
+                       "figure8"
+                       "figure9";
 }
+
 
 h1 {
   font-family: $fontstyle;
-  font-size: 30pt;
+  font-size: 36pt;
 }
 
 $a-tags: 'a, a:active, a:hover, a:visited';
@@ -47,12 +50,13 @@ $a-tags-hover: 'a:active, a:hover';
     margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr auto auto auto auto;
+    grid-template-rows: 1fr auto auto auto auto auto;
     grid-template-areas: "header header "
                          "figure1 figure2"
                          "figure3 figure4"
                          "figure5 figure6"
-                         ". github";
+                         "figure7 figure8"
+                         "figure9 .";
   }
 }
 
@@ -67,12 +71,11 @@ $a-tags-hover: 'a:active, a:hover';
     margin-right: auto;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr auto auto 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
     grid-template-areas: ". header ."
                          "figure1 figure2 figure3"
                          "figure4 figure5 figure6"
-                         ". . ."
-                         ". . github";
+                         "figure7 figure8 figure9";
   }
 }
 figcaption {
